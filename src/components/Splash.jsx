@@ -7,11 +7,17 @@ function Splash(){
     <div>
     <style global jsx>{`
         img{
-          justify-content: center;
-          border: 4px solid white;
+          display: block;
+          border: 10px solid white;
+          width: 90%;
+        }
+
+        .subtext{
+          text-align: center;
         }
           `}</style>
- <img width= '1080' src={SplashImage}/>
+ <img src={SplashImage}/>
+ <p className="subtext">Find the perfect Album to fit your mood</p>
  </div>
  )
 }
