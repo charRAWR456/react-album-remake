@@ -4,6 +4,8 @@ import AlbumList from './AlbumList';
 import { Switch, Route } from 'react-router-dom';
 import NewAlbumControl from './NewAlbumControl';
 import Error404 from './Error404';
+import Splash from './Splash';
+
 
 class App extends React.Component{
   constructor(props) {
@@ -23,9 +25,15 @@ class App extends React.Component{
   render(){
     return(
       <div>
+        <style global jsx>{`
+            body {
+              background-color: lightyellow;
+            }
+          `}</style>
         <Header/>
         <Switch>
-          <Route exact path='/' render={()=><AlbumList albumList={this.state.masterAlbumList} />} />
+            <Route exact path='/' render={()=><Splash/>}/>
+          <Route path='/marketplace' render={()=><AlbumList albumList={this.state.masterAlbumList} />} />
           <Route path='/newalbum' render={()=><NewAlbumControl onNewAlbumCreation={this.handleAddingNewAlbumToList} />} />
           <Route component={Error404} />
         </Switch>

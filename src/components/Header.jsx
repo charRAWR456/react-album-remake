@@ -4,8 +4,18 @@ import { Link } from 'react-router-dom';
 function Header(){
   return (
     <div>
-      <h1>MarketPlace</h1>
-      <Link to="/">Home</Link> | <Link to="/newalbum">Create Album</Link>
+      <style global jsx>{`
+          .nav-links {
+            float: right;
+          }
+        `}</style>
+      <Link className="nav-links" to="/">Home </Link>
+      <br/>
+      <Link className="nav-links" to="/marketplace">MarketPlace</Link>
+      <br/>
+      <Link className="nav-links" to="/newalbum">Create Album</Link>
+      <h1>Music Store</h1>
+      <hr />
     </div>
   );
 }

@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 function AddNewAlbum(props){
   return (
     <div>
-      <p>would you like to add a new album?</p>
-      <button onClick={props.onNewAlbum}>Yes</button>
+      <h2>Click 'Create New' to post a new album for sale.</h2>
+      <button onClick={props.onNewAlbum}>Create New</button>
     </div>
   );
 }

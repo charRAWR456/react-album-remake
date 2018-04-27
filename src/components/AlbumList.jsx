@@ -6,11 +6,11 @@ import PropTypes from 'prop-types';
 function AlbumList(props){
   return (
     <div>
-      <hr/>
       {props.albumList.map((album) =>
         <Album albumName={album.albumName}
           artist={album.artist}
           genre={album.genre}
+          price={album.price}
           key={album.id}/>
       )}
     </div>
