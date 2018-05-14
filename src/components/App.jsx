@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import NewAlbumControl from './NewAlbumControl';
 import Error404 from './Error404';
 import Splash from './Splash';
+import AboutUs from './AboutUs';
 
 
 class App extends React.Component{
@@ -33,6 +34,7 @@ class App extends React.Component{
         <Header/>
         <Switch>
             <Route exact path='/' render={()=><Splash/>}/>
+            <Route path='/aboutus' render={()=><AboutUs/>}/>
           <Route path='/marketplace' render={()=><AlbumList albumList={this.state.masterAlbumList} />} />
           <Route path='/newalbum' render={()=><NewAlbumControl onNewAlbumCreation={this.handleAddingNewAlbumToList} />} />
           <Route component={Error404} />

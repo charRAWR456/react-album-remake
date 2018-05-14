@@ -33,7 +33,7 @@ function NewAlbumForm(props){
           ref={(input) => {_artist = input;}} />
         <br />
           <input
-            type='text'
+            type='string'
             id='price'
             placeholder='Price'
             ref={(input) => {_price = input;}} />

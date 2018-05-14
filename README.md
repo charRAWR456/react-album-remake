@@ -22,12 +22,11 @@ This webpage is a rebuild of the Angular project for an online store that sells 
 
 ## Specifications
 1. User can click on albums to view more information
-2. User can create a new album 
+2. User can create a new album
 3. User can delete album
 4. User can edit an album
 
 ## Items to be added
-1. Add splash page
 2. Add about us page
 3. Change the Create album page to an admin page with options to add create and delete
 4. Add edit album feature

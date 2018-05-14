@@ -6,8 +6,9 @@ function Album(props){
     <div>
       <style global jsx>{
 `  .albums{
-  background-color: #eee;
-    width: 60%;
+  background-color: #f2e5ab;
+  width: 250px;
+  display: block;
   margin: 16px auto;
   border: 1px solid #eee;
   box-shadow: 0 2px 3px #ccc;
@@ -27,7 +28,7 @@ Album.propTypes = {
   albumName: PropTypes.string.isRequired,
   artist: PropTypes.string.isRequired,
   genre: PropTypes.string,
-  price: PropTypes.string.isRequired
+  price: PropTypes.number.isRequired
 };
 
 export default Album;
