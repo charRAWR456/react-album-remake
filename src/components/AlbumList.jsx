@@ -4,9 +4,8 @@ import PropTypes from 'prop-types';
 
 
 function AlbumList(props){
-
+if(props.albumList.length > 0){
   return (
-
     <div>
       {props.albumList.map((album) =>
         <Album albumName={album.albumName}
@@ -17,6 +16,9 @@ function AlbumList(props){
       )}
     </div>
   );
+}else{
+  return <div>Please go to 'Create Album' and add an Album to your store.</div>
+}
 }
 
 AlbumList.propTypes = {

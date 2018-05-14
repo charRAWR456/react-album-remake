@@ -1,10 +1,10 @@
 # Jamie Pittak's Music-Store
-#### Weeks 16 project for Epicodus
+#### Weeks 16-17 project for Epicodus
 
 ### By Jamie Pittak
 
 ## Description
-This webpage is a rebuild of the Angular project for an online store that sells albums. The user will be able to add and delete albums from the marketplace. This project is for week 16 "React" of Epicodus.
+This webpage is a rebuild of the Angular project for an online store that sells albums. The user will be able to add and delete albums from the marketplace. This project is for weeks 16-17 "React" of Epicodus.
 
 ## Project Layout
 
@@ -27,7 +27,6 @@ This webpage is a rebuild of the Angular project for an online store that sells 
 4. User can edit an album
 
 ## Items to be added
-2. Add about us page
 3. Change the Create album page to an admin page with options to add create and delete
 4. Add edit album feature
 5. Add an Album details page to view information on selected albums
