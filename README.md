@@ -17,7 +17,7 @@ This webpage is a rebuild of the Angular project for an online store that sells 
 4. navigate to http://localhost:8080/
 
 ## Known Bugs
-1. No ability to delete
+1. delete does not work
 2. user cannot click on item for more information
 
 ## Specifications

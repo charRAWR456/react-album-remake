@@ -19,6 +19,7 @@ function Album(props){
       <h3>{props.artist} - {props.albumName}</h3>
       <p><em>{props.genre}</em></p>
       <p><strong>{props.price}</strong></p>
+      <button onClick={props.delete}>delete</button>
       </div>
     </div>
   );

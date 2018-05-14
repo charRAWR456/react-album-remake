@@ -23,12 +23,9 @@ class App extends React.Component{
     this.setState({masterAlbumList: newMasterAlbumList});
   }
 
-  deleteAlbumHandler(albumIndex) {
-   this.setState({
-     masterAlbumList: this.state.masterAlbumList.filter(
-       album => album.index !== deleteAlbum.index
-     )
-   });
+  deleteAlbumHandler(album){
+  this.state.masterAlbumList.splice(album,1);
+   this.setState({masterAlbumList: masterAlbumList});
  }
 
   render(){
@@ -43,7 +40,8 @@ class App extends React.Component{
         <Switch>
             <Route exact path='/' render={()=><Splash/>}/>
             <Route path='/aboutus' render={()=><AboutUs/>}/>
-          <Route path='/marketplace' render={()=><AlbumList albumList={this.state.masterAlbumList}/>} />
+          <Route path='/marketplace' render={()=><AlbumList albumList={this.state.masterAlbumList}
+          deleteAlbum={this.deleteAlbumHandler}/>} />
           <Route path='/newalbum' render={()=><NewAlbumControl onNewAlbumCreation={this.handleAddingNewAlbumToList} />} />
           <Route component={Error404} />
         </Switch>

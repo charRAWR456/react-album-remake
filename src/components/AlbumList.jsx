@@ -12,7 +12,8 @@ if(props.albumList.length > 0){
           artist={album.artist}
           genre={album.genre}
           price={'$' + album.price}
-          key={album.id}/>
+          key={album.id}
+          delete={()=> {props.deleteAlbum(index)}}/>
       )}
     </div>
   );
