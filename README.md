@@ -27,12 +27,11 @@ This webpage is a rebuild of the Angular project for an online store that sells 
 4. User can edit an album
 
 ## Items to be added
-3. Change the Create album page to an admin page with options to add create and delete
-4. Add edit album feature
-5. Add an Album details page to view information on selected albums
-6. Move marketplace to its own path
-7. Add delete functionality
-8. Style page
+1. Change the Create album page to an admin page with options to add create and delete
+2. Add edit album feature
+3. Add an Album details page to view information on selected albums
+4. Add delete functionality
+
 
 ## Technologies Used
 * Javascript

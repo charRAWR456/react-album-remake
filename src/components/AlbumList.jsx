@@ -7,7 +7,7 @@ function AlbumList(props){
 if(props.albumList.length > 0){
   return (
     <div>
-      {props.albumList.map((album) =>
+      {props.albumList.map((album, index) =>
         <Album albumName={album.albumName}
           artist={album.artist}
           genre={album.genre}
